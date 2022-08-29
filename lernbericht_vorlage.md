@@ -1,31 +1,30 @@
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+
+Holzherr Janic Lern-Bericht
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+Wir bearbeiteten das Modul 133. Im Modul 133 geht es um Webentwicklung mit JSF.
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+Gelernt habe ich wie man eine Session erstellt und diese so nutzen kann um Daten für längere Zeit speichern kann.
 
 ## Beschreibung
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
-
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
-
+Durch das verwenden von SessionScoped, kann man eine Session erstellen in der dann Daten über eine bestimmte Zeit gespeichert werden können.
+Wichtig hier zu beachten ist, dass man implements Serializable verwendet. Ansonsten funktioniert die Session nicht.
+```java
+@SessionScoped
+public class HelloController implements Serializable{
+```
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+Beim Code Snippet sieht man wie man eine Session inizialisiert. Das habe ich auch kommentiert. 
 
 # Reflektion zum Arbeitsprozess
 
-👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief; 
+Es war für mich sehr leicht mich zu motivieren für das Modul zu arbeiten.
+Was leider nicht so gut funktioniert hat, waren die Fehlermeldungen die aufgekommen sind während des Arbeitprozesses. Ich habe sehr viel den Lehrer gefragt anstelle von selber die Lösung zu finden.
 
-👎 und etwas, was nicht gut lief.
-
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
+**VBV**: Das nächste mal werde ich mehr versuchen die Fehlermeldungen selbst zu debuggen um ein verständnis für das Problem zu entwickeln.
